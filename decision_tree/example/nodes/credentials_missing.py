@@ -1,13 +1,11 @@
 from enum import Enum
 from typing import Union
 
-from decision_tree.example.entities import (
-    BinaryRange,
-    SessionDto,
-    ValidationDecision,
+from decision_tree.example.base import (
     ValidationNode,
     ValidationSwitch,
 )
+from decision_tree.example.entities import SessionDto, ValidationDecision, BinaryRange
 
 
 class CredentialsMissingNode(ValidationNode):
